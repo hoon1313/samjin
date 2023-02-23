@@ -798,6 +798,7 @@ body {
 
 .store_cont ul li {
     width: 49%;
+    border: 1px solid #dbdbdb;
     background-color: #eee;
     float: left;
 }
@@ -805,7 +806,6 @@ body {
 .store_cont ul li:last-child {
     float: right;
     margin-left: 20px;
-    border: 1px solid blue;
 }
 
 .store_cont ul li a {
@@ -855,3 +855,208 @@ body {
 }
 
 /* store영역 끝 */
+
+/* footer영역 시작  */
+#footer {
+    padding-top: 50px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.footer_top {}
+
+.footer_top li {
+    float: left;
+    border-right: 1px solid #dbdbdb;
+    position: relative;
+    width: 31.3333%;
+    margin: 1%;
+    height: 210px;
+}
+
+.footer_top li .cs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.footer_top li .cs a {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px 30px 12px 10px;
+    margin-top: 10px;
+    color: #666;
+    transition: background 0.3s, color 0.3s;
+
+}
+
+.footer_top li .cs a:hover {
+    background-color: #ed5c22;
+    color: #fff;
+}
+
+.footer_top li .cs a i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.footer_top li h3 {
+    padding-bottom: 12px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.footer_top li .call {
+    font-size: 29px;
+    font-weight: 600;
+    color: #ed5c22;
+
+}
+
+.footer_top li .num {
+    color: #ed5c22;
+
+}
+
+.footer_top li p {
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.footer_top li .num {
+    font-size: 21px;
+}
+
+.footer_top .ft_desc {
+    font-size: 14px;
+    display: block;
+    color: #999;
+    padding-bottom: 15px;
+}
+
+.footer_top li em {
+    font-size: 15px;
+    font-weight: 500;
+    border-top: 1px solid #dbdbdb;
+    padding-top: 10px;
+}
+
+.footer_top li .check {
+    position: relative;
+    color: #666;
+}
+
+.footer_top li .check::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #999;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.footer_top li .check:hover::before {
+    width: 100%;
+}
+
+.footer_top li .check i {
+    font-size: 13px;
+    padding-left: 3px;
+}
+
+.footer_top .cs {
+    padding: 40px;
+}
+
+.footer_top .money-check {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px 12px 15px 15px;
+    color: #666;
+    transition: background 0.3s, color 0.3s;
+}
+
+.footer_top .money-check:hover {
+    background-color: #ed5c22;
+    color: #fff;
+}
+
+.footer_top .money .ft_desc {
+    font-size: 14px;
+    display: block;
+    color: #999;
+    padding: 10px 0;
+}
+
+.footer_top .money em {
+    border: 0;
+}
+
+.footer_bottom {
+    padding-top: 50px;
+    margin-top: 50px;
+    background-color: #231916;
+}
+
+.footer_bottom .fb_top li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.footer_bottom .fb_top li:hover a {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer_bottom .fb_top li a {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    padding: 8px 15px;
+    background-color: #0C0705;
+    transition: background 0.3s;
+}
+
+.footer_bottom .fb_middle {
+    position: relative;
+    padding: 70px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_bottom .fb_middle p {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.footer_bottom .fb_middle-logo {
+    position: absolute;
+    right: -180px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer_bottom .fb_middle-logo img {
+    width: 50%;
+    display: block;
+}
+
+.fb_bottom .copy {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #666;
+    font-size: 10px;
+}
+
+/* footer영역 끝 */
