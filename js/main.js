@@ -43,7 +43,7 @@ $(document).ready(function(){
                         }
                     ]
     });
-});
+
 
 
 
@@ -51,4 +51,16 @@ $(document).ready(function(){
     $('.set_slide').slick({
         autoplay:false
     });
+
 })
+     // 자식 요소를 숨김
+  $('.family > ul > li > ul').hide();
+
+  // Family Site의 li 요소를 클릭하면 자식 요소를 슬라이드 업/다운하여 나타냄
+  $('.family > ul > li').click(function(e) {
+    e.preventDefault();
+    $(this).children('ul').toggle();
+  });
+
+
+});
