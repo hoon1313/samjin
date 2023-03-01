@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+    $(".sitemap_menu").hide();
+    $(".category .total").hover(function(){
+        $(".sitemap_menu").stop().slideDown(200);
+    })
+    $(".sitemap_menu").mouseleave(function(){
+        $(".sitemap_menu").stop().slideUp(200);
+    })
+
+
     /* 배너 슬라이드 */
     $('.banner_img').slick({
         dots : true
